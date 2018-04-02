@@ -55,6 +55,7 @@ namespace Shadowsocks.View
         private MenuItem hotKeyItem;
         private MenuItem VerboseLoggingToggleItem;
         private ConfigForm configForm;
+        private QuickOperationsForm quickOperationsForm;
         private ProxyForm proxyForm;
         private LogForm logForm;
         private HotkeySettingsForm hotkeySettingsForm;
@@ -470,6 +471,20 @@ namespace Shadowsocks.View
             }
         }
 
+        private void ShowQuickOperationsForm()
+        {
+            if (quickOperationsForm != null)
+            {
+                quickOperationsForm.Activate();
+            }
+            else
+            {
+                quickOperationsForm = new QuickOperationsForm();
+                quickOperationsForm.Show();
+                quickOperationsForm.Activate();
+            }
+        }
+
         private void ShowProxyForm()
         {
             if (proxyForm != null)
@@ -584,9 +599,13 @@ namespace Shadowsocks.View
 
         private void notifyIcon1_Click(object sender, MouseEventArgs e)
         {
-            if ( e.Button == MouseButtons.Middle )
+            if(e.Button == MouseButtons.Middle)
             {
                 ShowLogForm();
+            }
+            if(e.Button == MouseButtons.Left)
+            {
+                ShowQuickOperationsForm();
             }
         }
 

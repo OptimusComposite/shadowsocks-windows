@@ -80,8 +80,8 @@
             // valueLabel
             // 
             this.valueLabel.AutoSize = true;
-            this.valueLabel.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valueLabel.Location = new System.Drawing.Point(39, 6);
+            this.valueLabel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valueLabel.Location = new System.Drawing.Point(39, 5);
             this.valueLabel.Name = "valueLabel";
             this.valueLabel.Size = new System.Drawing.Size(118, 24);
             this.valueLabel.TabIndex = 7;
@@ -89,7 +89,7 @@
             // 
             // CalculationControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.valueLabel);
             this.Controls.Add(this.factorNum);
@@ -97,7 +97,7 @@
             this.Controls.Add(this.plus);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "CalculationControl";
-            this.Size = new System.Drawing.Size(322, 34);
+            this.Size = new System.Drawing.Size(322, 31);
             ((System.ComponentModel.ISupportInitialize)(this.factorNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
